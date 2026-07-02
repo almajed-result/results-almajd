@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>نتيجة الطالبة</title>
+
+<style>
+*{
+box-sizing:border-box;
+font-family:Tahoma, Arial;
+}
+
+body{
+margin:0;
+background:#eef3f8;
+}
+
+.header{
+background:#0b5fa5;
+color:white;
+text-align:center;
+padding:20px;
+font-size:24px;
+font-weight:bold;
+}
+
+.box{
+max-width:900px;
+margin:30px auto;
+background:white;
+padding:25px;
+border-radius:18px;
+box-shadow:0 4px 20px rgba(0,0,0,0.12);
+}
+
+h2{
+text-align:center;
+margin-bottom:25px;
+}
+
+.info{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+margin-bottom:25px;
+}
+
+.card{
+background:#f7f9fc;
+padding:12px;
+border-radius:10px;
+}
+
+.result{
+background:#ffb347;
+padding:18px;
+text-align:center;
+font-size:22px;
+font-weight:bold;
+border-radius:12px;
+margin-bottom:20px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+}
+
+th{
+background:#0b5fa5;
+color:white;
+padding:12px;
+}
+
+td{
+border:1px solid #ddd;
+padding:12px;
+text-align:center;
+}
+
+.buttons{
+margin-top:25px;
+display:flex;
+gap:10px;
+}
+
+button{
+flex:1;
+padding:14px;
+border:none;
+border-radius:10px;
+font-size:17px;
+cursor:pointer;
+}
+
+.print{
+background:#0b5fa5;
+color:white;
+}
+
+.back{
+background:#999;
+color:white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+جمهورية العراق — وزارة التربية
+</div>
+
+<div class="box">
+
+<h2>ثانوية المجد الأهلية للبنات</h2>
+
+<div class="info">
+<div class="card">الاسم: دالي مصطفى يعقوب يوسف</div>
+<div class="card">اسم الأم: براء شاكر</div>
+<div class="card">المحافظة: الأنبار</div>
+<div class="card">الدور: الأول</div>
+<div class="card">الفرع: العلمي</div>
+<div class="card">المجموع: 400 / 700</div>
+<div class="card">المعدل: 0</div>
+</div>
+
+<div class="result">
+النتيجة النهائية: مكملة
+</div>
+
+<table>
+<tr>
+<th>المادة</th>
+<th>الدرجة</th>
+</tr>
+
+<tr><td>الإسلامية</td><td>100</td></tr>
+<tr><td>العربية</td><td>100</td></tr>
+<tr><td>الإنكليزية</td><td>0</td></tr>
+<tr><td>الأحياء</td><td>م</td></tr>
+<tr><td>الرياضيات</td><td>100</td></tr>
+<tr><td>الكيمياء</td><td>0</td></tr>
+<tr><td>الفيزياء</td><td>100</td></tr>
+</table>
+
+<div class="buttons">
+<button class="print" onclick="window.print()">طباعة النتيجة</button>
+<button class="back" onclick="window.location='index.html'">العودة</button>
+</div>
+
+</div>
+
+</body>
+</html>
